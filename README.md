@@ -13,3 +13,15 @@ Web applications vary in complexity and functionality, which directly impacts th
 Typically, web application architecture is divided into two main groups: user interface components and structural web components. The structural components include both client-side and server-side elements, which interact to provide the necessary functionality.
 
 The architecture of a system can also include both existing third-party services and custom-built solutions. It’s essential to highlight that every architecture is multi-layered, and in this article, we will cover only the fundamentals to explain why understanding architecture is so important. However, don’t expect an in-depth technical explanation here — this article aims to provide an introduction. If you are interested in specific approaches, you can explore them through other articles in our blog or with the help of our consulting services.
+
+**DNS (Domain Name System)**
+DNS is a critical component that matches domain names with corresponding IP addresses. It ensures that user requests are routed to the correct server. DNS isn’t created from scratch: third-party services are used when it comes to this aspect of the architecture.
+
+**Load balancer**
+The load balancer helps distribute incoming user requests across multiple servers, ensuring that no single server becomes overwhelmed. By spreading the traffic evenly, it prevents overloads and ensures consistent performance. Load balancers help create multiple instances of the same service so all servers handle requests identically. Usually, ready-to-use solutions from cloud providers are used. 
+
+**Web app servers**
+These servers are responsible for processing user requests and sending the necessary responses back to the browser. To do this, web app servers communicate with various back-end components such as databases, job queues, and caching servers. These components are the base of the web architecture. 
+
+**Database**
+Databases store, retrieve, organize, and update data used by the application. The web app server directly interacts with the database to manage this data, performing operations like creating or updating records.
